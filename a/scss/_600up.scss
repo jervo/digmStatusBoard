@@ -1,0 +1,57 @@
+.container {
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	-webkit-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
+  	flex-flow: row wrap;
+}
+#faculty > .section-content {
+	.nested-accordion {
+		display: flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		-webkit-flex-flow: row wrap;
+		-ms-flex-flow: row wrap;
+	  	flex-flow: row wrap;
+	  	-webkit-justify-content: space-between;	
+	  	-ms-justify-content: space-between;	
+	  	justify-content: space-between;
+	}
+	.nested-accordion > li {
+	  	-webkit-flex-basis: 49%;
+	  	-ms-flex-basis: 49%;
+		-webkit-flex-grow:1;
+		-ms-flex-grow:1;
+		flex-basis: 49%;
+		max-width: 49%;
+		flex-grow:1;
+		&:nth-child(odd) {
+			clear: left;
+		}
+		& > li {
+			min-height: 120px;
+		}
+	}
+}
+
+
+.t-half {
+	-webkit-flex-basis: 50%;
+	-ms-flex-basis: 50%;
+	flex-basis: 50%;
+	-webkit-flex-grow:1;
+	-ms-flex-grow:1;
+	flex-grow:1;
+	&:nth-child(even) {
+		border-left: 3px solid $drexel-blue;
+	}
+}
+
+
+
+.schedule-events {
+	li p {
+		display: block;
+	}
+}

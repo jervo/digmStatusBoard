@@ -1,0 +1,39 @@
+// Project: Drexel DIGM Status
+// Desc: A responsive website students can acces to see 
+// 	     status of labs and their current term.
+// Author: Chelsea Myers
+
+
+
+//Reset
+@import "normalize";
+
+//Base Styles
+@import "base";
+
+//Dashboard
+@import "dashboard";
+
+
+
+@media screen and (min-width: 375px){
+	@import "375up";
+}
+
+@media screen and (min-width: 425px){
+	@import "425up";
+}
+
+
+@media screen and (min-width: 600px){
+	@import "600up";
+}
+
+
+@media screen and (min-width: 1200px){
+	@import "1200up"; 
+}
+
+@media screen and (min-width: 1900px){
+	@import "1920up"; 
+}

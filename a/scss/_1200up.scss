@@ -1,0 +1,234 @@
+body {
+	padding: 0 $b;
+}
+
+.times, .zebra-lines {
+	display: block;
+	margin-left:0;
+	position: absolute;
+	top:39px;
+	li {
+		height: 18px;
+		padding: 0;
+	}
+}
+
+.times {
+	width: 45px;
+	border-bottom:0;
+	li {
+		border:0;
+	}
+}
+
+.current-time--small{
+	display: none;
+}
+.current-time--large {
+	display: block;
+	z-index: 2;
+}
+
+.am:after, .pm:after {
+	display: inline-block;
+	margin:0;
+	padding:0;
+	line-height:1;
+}
+
+
+$col-width: 5.88%;
+.row-container {
+	position: relative;
+	min-height: 296px;
+	display: -webkit-flex;
+	display: flex;
+	display: -ms-flex;
+	-webkit-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
+  	flex-flow: row wrap;
+  	-webkit-justify-content: space-between;
+  	-ms-justify-content: space-between;	
+  	justify-content: space-between;
+	margin:0;
+	padding-left: 45px;
+	float: left;
+	width: 100%;
+	overflow: hidden;
+	.row {
+		border-right: 1px solid $darker-gray;
+		text-align:  center;
+		-webkit-flex-basis: $col-width;
+		-webkit-flex-grow:1;
+		-ms-flex-basis: $col-width;
+		-ms-flex-grow:1;
+		flex-basis: $col-width;
+		flex-grow:1;
+		&:last-child {
+			border:0;
+		}
+	}
+	.row-label {
+		width: 100%;
+		z-index: 3;
+	}
+}
+
+.schedule-events {
+	margin-left:0;
+	margin-top: 25px;
+	li {
+		padding: 10px;
+		left: 0 !important;
+		width: 100% !important;
+		height: 60px;
+		overflow: hidden;
+		border-bottom: 1px solid white;
+		&.event-md {
+			padding: 5px;
+		}
+		.className, .instructorName {
+			display: block;
+		}
+		p {
+			padding:0;
+		}
+		.course {
+			display: none;
+
+		}
+	}
+}
+	
+
+header {
+	width: 100%;
+	overflow: auto;
+	background: white;
+	position: relative;
+}
+#title {
+	display: inline-block;
+	float: left;
+}
+
+#info {
+	float: left;
+	position: static;
+	height: 77px;
+	p {
+		line-height: 51px;
+	}
+	#cur-week {
+		padding-left:0;
+	}
+}
+
+.menu-btn {
+	right:0;
+	left: auto;
+	height:77px;
+	width: 70px;
+	padding-top:28px;
+	span {
+		background: transparent;
+	}
+	& span:before {
+		content: 'Menu';
+		color: white;
+		background: transparent;
+	}
+	& span:after {
+		background: transparent;
+		width: 0; 
+		height: 0; 
+		border-left: 5px solid transparent;
+		border-right: 5px solid transparent;
+		border-top: 5px solid white;
+		right:10px;
+		top: 26px;
+	}
+}
+
+.mobile-menu {
+	clear:both;
+}
+
+
+$section-width: 49%;
+#video {
+  -webkit-flex-basis: $section-width;
+  -ms-flex-basis: $section-width;
+  flex-basis: $section-width;
+  width: $section-width;
+  display:block;
+	video {
+		width: 100%;
+	}
+}
+#featured {
+	-webkit-flex-basis: $section-width;
+	-ms-flex-basis: $section-width;
+  	flex-basis: $section-width;
+  	width: $section-width;
+}
+#faculty, footer {
+	-webkit-flex-basis: 100%;
+  	flex-basis: 100%;
+  	width: 100%;
+}
+#news, #jobs, #ace-labs, #links {
+	-webkit-flex-basis: $section-width;
+	-ms-flex-basis: $section-width;
+  	flex-basis: $section-width;
+  	max-width: $section-width;
+}
+.container {
+	justify-content: space-between;
+	-ms-justify-content: space-between;
+	-webkit-justify-content: space-between;
+}
+
+section {
+	background: white;
+	margin-top:0;
+}
+section > .section-content {
+	display:block !important;
+}
+section > .section-header {
+	cursor: auto;
+	&:after {
+		display: none;
+	}
+}
+
+
+#labs{ -ms-flex-order: 1; -webkit-order: 1; order: 1;}
+#video{ -ms-flex-order: 2; -webkit-order: 2; order: 2;}
+#featured{ -ms-flex-order: 3; -webkit-order: 3; order: 3;}
+#faculty {-ms-flex-order: 4; -webkit-order: 4; order: 4;}
+#news {-ms-flex-order: 5; -webkit-order: 5; order: 5;}
+#jobs {-ms-flex-order: 6; -webkit-order: 6; order: 6;}
+#ace-labs {-ms-flex-order: 7; -webkit-order: 7; order: 7;}
+#links{-ms-flex-order: 8; -webkit-order: 8; order: 8;}
+footer {-ms-flex-order: 9; -webkit-order: 9; order: 9;}
+
+#faculty > .section-content .nested-accordion > li {
+  -webkit-flex-basis: 32.5%;
+  -ms-flex-basis: 32.5%;
+  flex-basis: 32.5%;
+  max-width: 32.5%;
+}
+
+#faculty > .section-content {
+	display:block;
+}
+
+.thumbnail {
+	max-width: 220px;
+}
+
+.video-link {
+	display: block;
+}
