@@ -2,3 +2,7 @@
 *.css.map
 *.sass.map
 *.scss.map
+
+a/videos/
+error_log
+pieces/config/db.php
