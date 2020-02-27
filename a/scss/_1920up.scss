@@ -214,7 +214,14 @@ header {
 
 #faculty {
 	position: absolute;
-  	left: 820px;
+  left: 820px;
+  height: 657px;
+
+  .section-content {
+    display: flex !important;
+    flex-direction: column;
+    height: 100%;
+  }
 }
 .nested-accordion {
 	position:relative;
@@ -353,7 +360,7 @@ header {
 	width: 805px;
 	position: absolute;
 	left: $b;
-	top: 137px;
+	top: 134px;
 	height: 523px;
 	video {
 		padding:15px;
@@ -806,8 +813,10 @@ header {
 
 
 .faculty-table {
-  height: 388px;
+  // height: 388px;
   display: block;
+  flex: 1 1 0;
+  overflow-y: scroll;
 }
 
 .faculty-card-hide {

@@ -2147,7 +2147,12 @@ hr {
 
   #faculty {
     position: absolute;
-    left: 820px; }
+    left: 820px;
+    height: 657px; }
+    #faculty .section-content {
+      display: flex !important;
+      flex-direction: column;
+      height: 100%; }
 
   .nested-accordion {
     position: relative;
@@ -2248,7 +2253,7 @@ hr {
     width: 805px;
     position: absolute;
     left: 15px;
-    top: 137px;
+    top: 134px;
     height: 523px; }
     #video video {
       padding: 15px;
@@ -2688,8 +2693,9 @@ hr {
     border-radius: 8px; }
 
   .faculty-table {
-    height: 388px;
-    display: block; }
+    display: block;
+    flex: 1 1 0;
+    overflow-y: scroll; }
 
   .faculty-card-hide {
     display: none; }
