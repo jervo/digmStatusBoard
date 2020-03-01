@@ -1102,9 +1102,7 @@ footer {
 
 .faculty-table {
   margin: 0;
-  width: 626px;
   background: white;
-  display: none;
   overflow: hidden;
   border-radius: 3px;
   position: relative;
@@ -1125,7 +1123,12 @@ footer {
   }
 
   tr {
-    border-bottom: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	
+	&.featured {
+		background-color: $gray;
+		color: $prim-blue;
+	}
   }
 }
 

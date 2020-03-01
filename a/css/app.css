@@ -1148,9 +1148,7 @@ footer {
 
 .faculty-table {
   margin: 0;
-  width: 626px;
   background: white;
-  display: none;
   overflow: hidden;
   border-radius: 3px;
   position: relative; }
@@ -1165,6 +1163,9 @@ footer {
     background: #fff; }
   .faculty-table tr {
     border-bottom: 1px solid #eee; }
+    .faculty-table tr.featured {
+      background-color: #f4f4f4;
+      color: #2471cc; }
 
 .faculty-table td {
   padding: 4px;
@@ -2693,9 +2694,7 @@ hr {
     border-radius: 8px; }
 
   .faculty-table {
-    display: block;
-    flex: 1 1 0;
-    overflow-y: scroll; }
+    flex: 1 1 0; }
 
   .faculty-card-hide {
     display: none; }

@@ -1153,9 +1153,7 @@ footer {
 
 .faculty-table {
   margin: 0;
-  width: 626px;
   background: white;
-  display: none;
   overflow: hidden;
   border-radius: 3px;
   position: relative; }
@@ -1170,6 +1168,9 @@ footer {
     background: #fff; }
   .faculty-table tr {
     border-bottom: 1px solid #eee; }
+    .faculty-table tr.featured {
+      background-color: #f4f4f4;
+      color: #2471cc; }
 
 .faculty-table td {
   padding: 4px;
