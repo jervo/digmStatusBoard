@@ -2700,10 +2700,8 @@ hr {
     display: none; }
 
   .faculty-table thead {
-    position: absolute;
     background: white;
     width: 100%;
-    z-index: 3;
     display: table; }
 
   .faculty-table tbody {
