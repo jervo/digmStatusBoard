@@ -370,7 +370,7 @@ header {
 
 
 #labs {
-	width: 1447px;
+	width: 1460px;
 	position: absolute;
 	left: $b;
 	top: 657px;
@@ -658,6 +658,15 @@ header {
 		list-style: none;
 		line-height: 1.25;
 		font-size:10px;
+	}
+	a{
+		color: $white;
+		text-decoration: underline;
+		line-height: 0;
+
+		&:hover {
+			color: $sec-green;
+		}
 	}
 }
 

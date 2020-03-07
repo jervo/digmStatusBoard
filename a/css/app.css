@@ -2261,7 +2261,7 @@ hr {
       max-height: 466px; }
 
   #labs {
-    width: 1447px;
+    width: 1460px;
     position: absolute;
     left: 15px;
     top: 657px;
@@ -2573,6 +2573,12 @@ hr {
       list-style: none;
       line-height: 1.25;
       font-size: 10px; }
+    .help-info a {
+      color: #fff;
+      text-decoration: underline;
+      line-height: 0; }
+      .help-info a:hover {
+        color: #96b819; }
 
   #timeline {
     position: absolute;

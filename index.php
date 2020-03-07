@@ -121,9 +121,9 @@
 				<div class="help-info">
 					<h5>Need Help?</h5>
 					<ul>
-						<li>support.westphal@drexel.edu</li>
-						<li>web.westphal@drexel.edu</li>
-						<li>215-895-2906</li>
+						<li><a href="mailto:support.westphal@drexel.edu">support.westphal@drexel.edu</a></li>
+						<li><a href="mailto:web.westphal@drexel.edu">web.westphal@drexel.edu</a></li>
+						<li><a href="tel:+1-215-895-2906">215-895-2906</a></li>
 					</ul>
 				</div>
 				<?php
