@@ -1148,9 +1148,7 @@ footer {
 
 .faculty-table {
   margin: 0;
-  width: 626px;
   background: white;
-  display: none;
   overflow: hidden;
   border-radius: 3px;
   position: relative; }
@@ -1165,6 +1163,9 @@ footer {
     background: #fff; }
   .faculty-table tr {
     border-bottom: 1px solid #eee; }
+    .faculty-table tr.featured {
+      background-color: #f4f4f4;
+      color: #2471cc; }
 
 .faculty-table td {
   padding: 4px;
@@ -2260,7 +2261,7 @@ hr {
       max-height: 466px; }
 
   #labs {
-    width: 1447px;
+    width: 1460px;
     position: absolute;
     left: 15px;
     top: 657px;
@@ -2572,6 +2573,12 @@ hr {
       list-style: none;
       line-height: 1.25;
       font-size: 10px; }
+    .help-info a {
+      color: #fff;
+      text-decoration: underline;
+      line-height: 0; }
+      .help-info a:hover {
+        color: #96b819; }
 
   #timeline {
     position: absolute;
@@ -2693,18 +2700,14 @@ hr {
     border-radius: 8px; }
 
   .faculty-table {
-    display: block;
-    flex: 1 1 0;
-    overflow-y: scroll; }
+    flex: 1 1 0; }
 
   .faculty-card-hide {
     display: none; }
 
   .faculty-table thead {
-    position: absolute;
     background: white;
     width: 100%;
-    z-index: 3;
     display: table; }
 
   .faculty-table tbody {

@@ -121,9 +121,9 @@
 				<div class="help-info">
 					<h5>Need Help?</h5>
 					<ul>
-						<li>support.westphal@drexel.edu</li>
-						<li>web.westphal@drexel.edu</li>
-						<li>215-895-2906</li>
+						<li><a href="mailto:support.westphal@drexel.edu">support.westphal@drexel.edu</a></li>
+						<li><a href="mailto:web.westphal@drexel.edu">web.westphal@drexel.edu</a></li>
+						<li><a href="tel:+1-215-895-2906">215-895-2906</a></li>
 					</ul>
 				</div>
 				<?php
@@ -281,96 +281,32 @@
 			<section id="faculty">
 				<h2 class="section-header">Faculty Information</h2>
 				<div class="section-content">
-					<ul class="nested-accordion">
+
+				<div class="faculty-table <?php if($faculty >= 24) echo 'scroll-table';?>">
+					<table style="top:0px;">
+						<thead>
+							<tr>
+								<td>Name</td>
+								<td>Title</td>
+								<td>Office</td>
+								<td>Email</td>
+								<td>Phone</td>
+							</tr>
+						</thead>
+						<tbody>
 						<?php
-
-						if($faculty > 15 ){
-							while ($row = mysqli_fetch_row($sql)) {
-								$faculty_saved[] = $row;
-								if($row[8] ==  "Yes") {?>
-								<li  <?php if(!$row[7]) echo 'class="no-avatar"';?>>
-									<?php } else {?>
-									<li class="faculty-card-hide">
-								<?php	} ?>
-									<h3 class="section-header"><?php echo $row[1]?></h3>
-									<ul class="section-content">
-										<?php if($row[7]){
-										 echo '<li class="avatar"><img src="a/imgs/avatars/'.$row[7].'" alt=""></li>';
-										 } ?>
-										<li><strong>Title:</strong> <?php echo $row[2]?></li>
-										<li><strong>Office:</strong>  <?php echo $row[3]?></li>
-										<li><strong>Email:</strong> <a href="mailto:<?php echo $row[4]?>"> <?php echo $row[4]?></a></li>
-										<li><strong>Phone:</strong>  <?php echo $row[5]?></li>
-									</ul>
-								</li>
-					<?php
-						}
-					} else {
-						while ($row = mysqli_fetch_row($sql)) {
-							$faculty_saved[] = $row; ?>
-								<li>
-									<h3 class="section-header"><?php echo $row[1]?></h3>
-									<ul class="section-content">
-										<?php if($row[7]){
-										 echo '<li class="avatar"><img src="a/imgs/avatars/'.$row[7].'" alt=""></li>';
-										 } ?>
-										<li><strong>Title:</strong> <?php echo $row[2]?></li>
-										<li><strong>Office:</strong>  <?php echo $row[3]?></li>
-										<li><strong>Email:</strong> <a href="mailto:<?php echo $row[4]?>"> <?php echo $row[4]?></a></li>
-										<li><strong>Phone:</strong>  <?php echo $row[5]?></li>
-									</ul>
-								</li>
-						<?php  }
-					}?>
-					</ul>
-					<?php if($faculty > 15 ){?>
-						<div class="faculty-table <?php if(count($faculty_saved) >= 21) echo 'scroll-table';?>">
-							<table style="top:0px;">
-								<thead>
-									<tr>
-										<td>Name</td>
-										<td>Title</td>
-										<td>Office</td>
-										<td>Email</td>
-										<td>Phone</td>
-									</tr>
-								</thead>
-								<tbody>
-
-
-								<?php
-
-
-								foreach($faculty_saved as $row) {
-									if($row[8] != "Yes") {?>
-										<tr>
-											<td><?php echo $row[1]?></td>
-											<td><?php echo $row[2]?></td>
-											<td><?php echo $row[3]?></td>
-											<td><?php echo $row[4]?></td>
-											<td><?php echo $row[5]?></td>
-										</tr>
-								<?php }
-								}
-								reset($faculty_saved);
-								if(count($faculty_saved) >= 21){
-									foreach($faculty_saved as $row) {
-										if($row[8] != "Yes") {?>
-											<tr>
-												<td><?php echo $row[1]?></td>
-												<td><?php echo $row[2]?></td>
-												<td><?php echo $row[3]?></td>
-												<td><?php echo $row[4]?></td>
-												<td><?php echo $row[5]?></td>
-											</tr>
-									<?php }
-									}
-								}
-							  ?>
-								</tbody>
-							</table>
-						</div>
-					<?php } ?>
+						while ($row = mysqli_fetch_row($sql)) {?>
+							<tr <?php if($row[8] ==  "Yes") echo 'class="featured"';?>>
+								<td><?php echo $row[1]?></td>
+								<td><?php echo $row[2]?></td>
+								<td><?php echo $row[3]?></td>
+								<td><?php echo $row[4]?></td>
+								<td><?php echo $row[5]?></td>
+							</tr>
+						<?php }?>
+						</tbody>
+					</table>
+					</div>
 				</div>
 			</section>
 
