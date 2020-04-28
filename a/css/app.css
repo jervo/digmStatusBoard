@@ -2135,12 +2135,13 @@ hr {
   #faculty {
     background: transparent;
     max-width: 642px;
-    margin-left: 15px; }
-    #faculty h2 {
-      display: none; }
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column; }
     #faculty .section-content {
       background: transparent;
-      padding: 0; }
+      padding: 0;
+      flex: 1; }
 
   .date, .clock, #weather,
   #timeline, #term-info {
@@ -2152,8 +2153,7 @@ hr {
     height: 657px; }
     #faculty .section-content {
       display: flex !important;
-      flex-direction: column;
-      height: 100%; }
+      flex-direction: column; }
 
   .nested-accordion {
     position: relative;
@@ -2700,7 +2700,8 @@ hr {
     border-radius: 8px; }
 
   .faculty-table {
-    flex: 1 1 0; }
+    flex: 1 1 0;
+    overflow-y: scroll; }
 
   .faculty-card-hide {
     display: none; }

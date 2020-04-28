@@ -198,12 +198,12 @@ header {
 	background: transparent;
 	max-width: 642px;
 	margin-left: $b;
-	h2 {
-		display: none;
-	}
+	display: flex;
+    flex-direction: column;
 	.section-content {
 		background: transparent;
 		padding: 0;
+		flex: 1;
 	}
 }
 
@@ -220,7 +220,6 @@ header {
   .section-content {
     display: flex !important;
     flex-direction: column;
-    height: 100%;
   }
 }
 .nested-accordion {
@@ -823,6 +822,7 @@ header {
 
 .faculty-table {
   flex: 1 1 0;
+  overflow-y: scroll;
 }
 
 .faculty-card-hide {
