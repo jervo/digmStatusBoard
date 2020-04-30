@@ -2139,8 +2139,6 @@ hr {
     display: flex;
     flex-direction: column; }
     #faculty .section-content {
-      background: transparent;
-      padding: 0;
       flex: 1; }
 
   .date, .clock, #weather,
