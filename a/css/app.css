@@ -1157,8 +1157,8 @@ footer {
     margin: 0;
     transition: top 20s linear;
     min-height: 100%; }
-  .faculty-table thead td {
-    font-weight: bold; }
+  .faculty-table thead {
+    text-align: left; }
   .faculty-table tr:nth-child(even) {
     background: #fff; }
   .faculty-table tr {
@@ -2673,8 +2673,7 @@ hr {
     right: -15px; }
 
   .news-modal--inner {
-    max-height: 600px;
-    overflow-y: scroll; }
+    max-height: 600px; }
     .news-modal--inner img {
       margin-top: 15px; }
 
@@ -2697,22 +2696,17 @@ hr {
     background-color: #fff;
     border-radius: 8px; }
 
-  .faculty-table {
-    flex: 1 1 0;
-    overflow-y: scroll; }
-
   .faculty-card-hide {
     display: none; }
 
   .faculty-table thead {
-    background: white;
-    width: 100%;
-    display: table; }
+    background: white; }
 
-  .faculty-table tbody {
-    display: table;
-    width: 100%;
-    width: 100%; }
+  .scroll-table table {
+    transform-style: preserve-3d; }
+
+  .scroll-table thead {
+    transform: translate3d(0, 0, 1px); }
 
   .scroll-table tbody {
     animation: scroll 15s infinite linear; }

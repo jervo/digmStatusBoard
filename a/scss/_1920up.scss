@@ -212,8 +212,8 @@ header {
 
 #faculty {
 	position: absolute;
-  left: 820px;
-  height: 657px;
+  	left: 820px;
+ 	height: 657px;
 
   .section-content {
     display: flex !important;
@@ -788,7 +788,6 @@ header {
 }
 .news-modal--inner {
 	max-height: 600px;
-	overflow-y: scroll;
 	img {
 		margin-top: $b;
 	}
@@ -817,30 +816,24 @@ header {
     border-radius: 8px;
 }
 
-
-.faculty-table {
-  flex: 1 1 0;
-  overflow-y: scroll;
-}
-
 .faculty-card-hide {
-  display: none;
+  	display: none;
 }
 
 .faculty-table thead {
-  background: white;
-  width: 100%;
-  display: table;
+  	background: white;
 }
 
-.faculty-table tbody {
-  display: table;
-  width: 100%;
-  width:100%;
+.scroll-table table {
+	transform-style: preserve-3d;
+}
+
+.scroll-table thead {
+	transform: translate3d(0, 0, 1px);
 }
 
 .scroll-table tbody {
-  animation: scroll 15s infinite linear;
+  	animation: scroll 15s infinite linear;
 }
 
 @keyframes scroll {
