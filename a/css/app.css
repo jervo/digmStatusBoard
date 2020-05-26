@@ -1157,8 +1157,8 @@ footer {
     margin: 0;
     transition: top 20s linear;
     min-height: 100%; }
-  .faculty-table thead td {
-    font-weight: bold; }
+  .faculty-table thead {
+    text-align: left; }
   .faculty-table tr:nth-child(even) {
     background: #fff; }
   .faculty-table tr {
@@ -2135,12 +2135,11 @@ hr {
   #faculty {
     background: transparent;
     max-width: 642px;
-    margin-left: 15px; }
-    #faculty h2 {
-      display: none; }
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column; }
     #faculty .section-content {
-      background: transparent;
-      padding: 0; }
+      flex: 1; }
 
   .date, .clock, #weather,
   #timeline, #term-info {
@@ -2152,8 +2151,7 @@ hr {
     height: 657px; }
     #faculty .section-content {
       display: flex !important;
-      flex-direction: column;
-      height: 100%; }
+      flex-direction: column; }
 
   .nested-accordion {
     position: relative;
@@ -2675,8 +2673,7 @@ hr {
     right: -15px; }
 
   .news-modal--inner {
-    max-height: 600px;
-    overflow-y: scroll; }
+    max-height: 600px; }
     .news-modal--inner img {
       margin-top: 15px; }
 
@@ -2699,21 +2696,17 @@ hr {
     background-color: #fff;
     border-radius: 8px; }
 
-  .faculty-table {
-    flex: 1 1 0; }
-
   .faculty-card-hide {
     display: none; }
 
   .faculty-table thead {
-    background: white;
-    width: 100%;
-    display: table; }
+    background: white; }
 
-  .faculty-table tbody {
-    display: table;
-    width: 100%;
-    width: 100%; }
+  .scroll-table table {
+    transform-style: preserve-3d; }
+
+  .scroll-table thead {
+    transform: translate3d(0, 0, 1px); }
 
   .scroll-table tbody {
     animation: scroll 15s infinite linear; }

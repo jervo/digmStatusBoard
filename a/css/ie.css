@@ -1162,8 +1162,8 @@ footer {
     margin: 0;
     transition: top 20s linear;
     min-height: 100%; }
-  .faculty-table thead td {
-    font-weight: bold; }
+  .faculty-table thead {
+    text-align: left; }
   .faculty-table tr:nth-child(even) {
     background: #fff; }
   .faculty-table tr {
