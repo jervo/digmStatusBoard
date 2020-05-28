@@ -2702,6 +2702,9 @@ hr {
   .faculty-table thead {
     background: white; }
 
+  .faculty-table td {
+    padding: 7px 4px; }
+
   .scroll-table table {
     transform-style: preserve-3d; }
 
