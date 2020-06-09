@@ -282,7 +282,7 @@
 				<h2 class="section-header">Faculty Information</h2>
 				<div class="section-content">
 
-				<div class="faculty-table <?php if($faculty >= 21) echo 'scroll-table';?>">
+				<div class="faculty-table <?php if($faculty >= 18) echo 'scroll-table';?>">
 					<table style="top:0px;">
 						<thead>
 							<tr>
