@@ -11,6 +11,8 @@ Drexel University DIGM status board
 *.sass.map
 *.scss.map
 
+*.DS_Store
+
 error_log
 a/videos/
 pieces/config/db.php /* Contact admin for this file */
