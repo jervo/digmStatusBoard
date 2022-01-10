@@ -8,3 +8,4 @@
 a/videos/
 error_log
 pieces/config/db.php
+.DS_Store
