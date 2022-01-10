@@ -3,6 +3,8 @@
 *.sass.map
 *.scss.map
 
+*.DS_Store
+
 a/videos/
 error_log
 pieces/config/db.php
