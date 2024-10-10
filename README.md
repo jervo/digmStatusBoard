@@ -1,8 +1,8 @@
 # DigmStatus2020
 Drexel University DIGM status board
 
-* LIVE: http://digm.drexel.edu/status/ 
-* DEV: http://jervo.com/status/
+* LIVE: https://digm.drexel.edu/status/ 
+* DEV: https://jervo.com/status/
 
 ### Gitignore
 ```
