@@ -2,7 +2,7 @@
 Drexel University DIGM status board
 
 * LIVE: https://digm.drexel.edu/status/ 
-* DEV: https://jervo.com/status/
+* DEV: 
 
 ### Gitignore
 ```
